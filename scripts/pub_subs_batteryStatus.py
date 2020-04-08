@@ -22,7 +22,7 @@ class BatCommunication(): #here we will have both the publisher and the subscrib
         self.publish_rate = rospy.Rate(1)
         
         #subscriber
-        rospy.Subscriber("/robot1/mobile_base/sensors/core", SensorState, self.f_bat_status)
+        rospy.Subscriber("mobile_base/sensors/core", SensorState, self.f_bat_status)
         #publisher
         self.pub = rospy.Publisher('battery_status', String, queue_size=1)
         # publish status to leds. We just publish batstatus[i] and chargingStatus.

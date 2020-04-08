@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="battery_status_turtlebot" type="pub_subs_batteryStatus.py" name="battery_status_turtlebot" output="screen"/>
+</launch>
